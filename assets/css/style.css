@@ -11,6 +11,37 @@ body {
     color: #39a6b2;
 }
 
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    color: #024e76;
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    border: solid 3px #024e76;
+    position: absolute;
+    right: 140px;
+    bottom: 120px;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
 /* style page header */
 header {
     padding: 20px 35px;
