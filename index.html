@@ -1,43 +1,101 @@
+<!--
+    ==========================
+    | RUN BUDDY LANDING PAGE |
+    ==================================================================================================================================
+
+    ? @document:               index.html
+    ? @document-created:       02/10/2022
+    ? @document-modified:      02/20/2022
+    ? @document-version:       1.1
+
+    ==================================================================================================================================
+
+    ? @document-about
+    ==================
+    | ABOUT DOCUMENT |
+    ==================================================================================================================================
+
+    This is a landing webpage for the Run Buddy website.
+
+    ==================================================================================================================================
+
+    ? @document-changelog
+    ======================
+    | DOCUMENT CHANGELOG |
+    ==================================================================================================================================
+
+    [Version 1.0] - "initial construction"
+
+        -   No records
+
+    [Version 1.1] - "mobile compatible"
+
+        -
+
+    ==================================================================================================================================
+
+    ? @document-todo
+    =================
+    | DOCUMENT TODO |
+    ==================================================================================================================================
+
+    -   
+
+    ==================================================================================================================================
+-->
 
 <!DOCTYPE html>
 
 <html lang="en">
+
+    <!--
+        ==========================
+        ==== WEBPAGE METADATA ====
+        ==========================
+    -->
+
     <head>
         <meta charset="UTF-8"/>
         <title>Run Buddy</title>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
+
+    <!--
+        ==========================
+        ===== WEBPAGE RENDER =====
+        ==========================
+    -->
+
     <body>
-        <!-- navigation -->
+
+        <!-- HEADER // BEGIN // -->
         <header>
             <h1><a href="./index.html">RUN BUDDY</a></h1>
+
+            <!-- nav bar for internal page links -->
             <nav>
-                <!-- unordered list element -->
                 <ul>
-                    <!-- list items -->
-                    <li>
-                        <a href="#what-we-do">What We Do</a>
-                    </li>
-                    <li>
-                        <a href="#what-you-do">What You Do</a>
-                    </li>
-                    <li>
-                        <a href="#your-trainers">Your Trainers</a>
-                    </li>
-                    <li>
-                        <a href="#reach-out">Reach Out</a>
-                    </li>
+                    <li><a href="#what-we-do">What We Do</a></li>
+                    <li><a href="#what-you-do">What You Do</a></li>
+                    <li><a href="#your-trainers">Your Trainers</a></li>
+                    <li><a href="#reach-out">Reach Out</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- HEADER \\ END \\ -->
 
-        <!-- hero/jumbotron -->
+
+
+
+        <!-- HERO SECTION // BEGIN // -->
         <section class="hero">
+
+            <!-- user information form container -->
             <div class="hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
 
-                <!-- add user input form. -->
+                <!-- user information form interface -->
                 <form action="">
                     <label for="name">Enter full name:</label>
                     <input class="form-input-field" type="text" placeholder="Your Name" name="name" id="name"/>
@@ -55,9 +113,7 @@
                     </p>
 
                     <p>
-                        <label for="checkbox">
-                            I acknowledge that I am at least 18 years of age.
-                        </label>
+                        <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
                         <input type="checkbox" name="age-confirm" id="checkbox">
                     </p>
     
@@ -66,125 +122,135 @@
                     </button>
                 </form>
             </div>
-        </section> 
 
-        <section id="what-we-do" class="intro">
-            <h2 class="section-title primary-border">What We Do</h2>
-            <p>
-                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle 
-                chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled 
-                twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-            </p>
         </section>
+        <!-- HERO SECTION \\ END \\ -->
 
-        <!-- "what we do" section -->
-        <section id="what-you-do" class="steps">
-            <h2 class="section-title secondary-border">What You Do</h2>
-            <div>
-                <img src="./assets/images/step-1.svg" alt="">
-                <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-                <p>You're already here, so why not?</p>
-            </div>
 
-            <div>
-                <img src="./assets/images/step-2.svg" alt="">
-                <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-                <p>Are you here to build muscle, lose weight, or just feel good?</p>
-            </div>
 
-            <div>
-                <img src="./assets/images/step-3.svg" alt="">
-                <h3>Step 3: <span>Get Running.</span></h3>
-                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
-            </div>
+        <!-- MAIN PAGE CONTENT // BEGIN // -->
+        <main>
+            <section id="what-we-do" class="intro">
+                <h2 class="section-title primary-border">What We Do</h2>
+                <p>
+                    butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle 
+                    chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled 
+                    twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+                </p>
+            </section>
 
-            <div>
-                <img src="./assets/images/step-4.svg" alt="">
-                <h3>Step 4: <span>See Results.</span></h3>
-                <p>Bi-weekly checkins with your trainer will keep you focused</p>
-            </div>
-        </section>
-
-        <!-- "meet the trainers" section -->
-        <section class="trainers" id="your-trainers">
-            <h2 class="section-title primary-border">Meet the Trainers</h2>
-            <article class="trainer">
-                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
-                <div class="trainer-bio text-left">
-                    <h3>Arron Stephens</h3>
-                    <h4>Speed / Strength</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </article>
-
-            <article class="trainer">
-                <div class="trainer-bio text-left">
-                    <h3>Joanna Gill</h3>
-                    <h4>Endurance</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
-            </article>
-
-            <article class="trainer">
-                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
-                <div class="trainer-bio text-left">
-                    <h3>Harry Smith</h3>
-                    <h4>Strength</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <!-- "reach out" section -->
-        <!-- extra comment!!! -->
-        <section class="contact" id="reach-out">
-            <h2 class="section-title secondary-border">Reach Out</h2>
-            <div class="contact-info">
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.8415514040316!2d-78.89054108444171!3d36.02416248011576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace39edaf7bac1%3A0x3008fff8e7a3fc7c!2s2608%20Banner%20St%2C%20Durham%2C%20NC%2027704!5e0!3m2!1sen!2sus!4v1644911810752!5m2!1sen!2sus" 
-                allowfullscreen="" 
-                loading="lazy">
-                </iframe>
+            <!-- "what we do" section -->
+            <section id="what-you-do" class="steps">
+                <h2 class="section-title secondary-border">What You Do</h2>
                 <div>
-                    <h3>Run Buddy</h3>
-                    <p>
-                        Any questions or concerns before signing up?
-                        <br/>
-                        Let us know and we'll be happy to talk to you!
-                    </p>
-                    <address>
-                        55 Main Street <br/>
-                        Some Town, Ca <br/>
-                        12345<br />
-                        P: 555.RUN.BUDZ (555.786.2839)<br/>
-                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-                    </address>
+                    <img src="./assets/images/step-1.svg" alt="">
+                    <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+                    <p>You're already here, so why not?</p>
                 </div>
-            </div>
-        </section>
 
+                <div>
+                    <img src="./assets/images/step-2.svg" alt="">
+                    <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+                    <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/step-3.svg" alt="">
+                    <h3>Step 3: <span>Get Running.</span></h3>
+                    <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/step-4.svg" alt="">
+                    <h3>Step 4: <span>See Results.</span></h3>
+                    <p>Bi-weekly checkins with your trainer will keep you focused</p>
+                </div>
+            </section>
+
+            <!-- "meet the trainers" section -->
+            <section class="trainers" id="your-trainers">
+                <h2 class="section-title primary-border">Meet the Trainers</h2>
+                <article class="trainer">
+                    <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
+                    <div class="trainer-bio text-left">
+                        <h3>Arron Stephens</h3>
+                        <h4>Speed / Strength</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trainer">
+                    <div class="trainer-bio text-left">
+                        <h3>Joanna Gill</h3>
+                        <h4>Endurance</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
+                </article>
+
+                <article class="trainer">
+                    <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
+                    <div class="trainer-bio text-left">
+                        <h3>Harry Smith</h3>
+                        <h4>Strength</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- "reach out" section -->
+            <!-- extra comment!!! -->
+            <section class="contact" id="reach-out">
+                <h2 class="section-title secondary-border">Reach Out</h2>
+                <div class="contact-info">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.8415514040316!2d-78.89054108444171!3d36.02416248011576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace39edaf7bac1%3A0x3008fff8e7a3fc7c!2s2608%20Banner%20St%2C%20Durham%2C%20NC%2027704!5e0!3m2!1sen!2sus!4v1644911810752!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                    </iframe>
+                    <div>
+                        <h3>Run Buddy</h3>
+                        <p>
+                            Any questions or concerns before signing up?
+                            <br/>
+                            Let us know and we'll be happy to talk to you!
+                        </p>
+                        <address>
+                            55 Main Street <br/>
+                            Some Town, Ca <br/>
+                            12345<br />
+                            P: 555.RUN.BUDZ (555.786.2839)<br/>
+                            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                        </address>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- MAIN PAGE CONTENT \\ END \\ -->
+
+
+        <!-- FOOTER // BEGIN // -->
         <footer>
             <h2>❤️ Made with love by Run Buddy.</h2>
             <div>
@@ -192,6 +258,8 @@
                 &copy; 2019 Run Buddy, Inc.
             </div>
         </footer>
+        <!-- FOOTER \\ END \\ -->
+        
     </body>
 </html>
 
