@@ -171,9 +171,13 @@ section {
 /* HERO STYLE ENDS */
 
 /* HEADER STYLE BEGINS */
+/* @changelog-record:#change[6.0]-"replaced float with flexbox" // BEGIN // */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -181,7 +185,6 @@ header h1 {
     font-size: 36px;
     color: var(--theme-yellow);
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -190,9 +193,9 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
+/* @changelog-record:#change[6.0]-"replaced float with flexbox" \\ END \\ */
 
 header nav ul li {
     display: inline;
