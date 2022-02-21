@@ -92,7 +92,8 @@ section {
 
 /* HERO STYLE BEGINS */
 .hero {
-    background-image: url("../images/hero-bg.jpg");
+    /* @changelog-record:#change[2.0]-"flipped hero image left" // BEGIN-END \\ */
+    background-image: url("../images/flipped-hero-image.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;

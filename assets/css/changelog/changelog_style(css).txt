@@ -8,3 +8,6 @@
                                                                                                     ------------------------------
 @changelog-record:#change[1.0]
     [1.0]-"added hero text styles"
+
+@changelog-record:#change[2.0]
+    [2.0]-"flipped hero image left"
