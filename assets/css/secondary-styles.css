@@ -1,4 +1,55 @@
+/*
+    ======================================
+    | SECONDARY STYLESHEET FOR RUN BUDDY |
+    ==================================================================================================================================
 
+    ? @author:                 William J. Horn
+    ? @document:               style.css
+    ? @document-created:       02/12/2022
+    ? @document-modified:      02/20/2022
+    ? @document-version:       2.0
+
+    ==================================================================================================================================
+
+    ? @document-about
+    ==================
+    | ABOUT DOCUMENT |
+    ==================================================================================================================================
+
+    Secondary CSS styles for the Run Buddy website. This document also acts as a selector overload for the primary "style.css"
+	file.
+
+    ==================================================================================================================================
+
+    ? @document-changelog
+    ======================
+    | DOCUMENT CHANGELOG |
+    ==================================================================================================================================
+
+    [Version 1.0] - "initial construction"
+
+        -   No records 
+
+
+    ? @document-changelog-detailed
+    For all changelog history, navigate to the changelog folder within this file's directory and open the file named:
+
+    changelog_<this file's name>(<this file type>)
+
+    Where <this file's name> is the name of this file and <this file type> is this file type's extension. For example, if this
+    file was named "index.html", the changelog file would be named "changelog_index(html)".
+
+    ==================================================================================================================================
+
+    ? @document-todo
+    =================
+    | DOCUMENT TODO |
+    ==================================================================================================================================
+
+    -   
+
+    ==================================================================================================================================
+*/
 
 .hero {
   background-position: bottom;
