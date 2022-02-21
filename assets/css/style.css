@@ -55,14 +55,28 @@
 */
 
 
+/*
+    ? @metadata
+    ==================================================
+    ================== CSS METADATA ==================
+    ==================================================
+*/
+
+
 /* @changelog-record:#change[5.0]-"added global variables // BEGIN // */
-/* GLOBAL VARIABLES // BEGIN // */
+/* 
+    GLOBAL VARIABLES // BEGIN // 
+*/
 :root {
     --theme-yellow: #fce138;
     --theme-blue: #024e76;
 }
-/* GLOBAL VARIABLES \\ END \\ */
+/* 
+    GLOBAL VARIABLES \\ END \\ 
+*/
 /* @changelog-record:#change[5.0]-"added global variables \\ END \\ */
+
+
 
 
 /* 
@@ -98,7 +112,70 @@ section {
 
 
 
-/* HERO STYLE BEGINS */
+/*
+    ? @main
+    ==================================================
+    ================== CSS STYLING ===================
+    ==================================================
+*/
+
+
+
+
+/* 
+    HEADER STYLE BEGINS 
+*/
+/* @changelog-record:#change[6.0]-"replaced float with flexbox" // BEGIN // */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--theme-yellow);
+    margin: 0;
+}
+
+header a {
+    color: var(--theme-yellow);
+    text-decoration: none;
+}
+
+header nav {
+    /* background-color: black; */
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* @changelog-record:#change[6.0]-"replaced float with flexbox" \\ END \\ */
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    background-color: black; /* @debug */
+}
+/*
+    HEADER STYLE \\ END \\
+*/
+
+
+
+
+/*
+    HERO STYLES // BEGIN //
+*/
 .hero {
     /* @changelog-record:#change[2.0]-"flipped hero image left" // BEGIN-END \\ */
     background-image: url("../images/flipped-hero-image.jpg");
@@ -168,47 +245,16 @@ section {
     width: 100%;
     margin-bottom: 15px;
 }
-/* HERO STYLE ENDS */
+/*
+    HERO STYLES \\ END \\
+*/
 
-/* HEADER STYLE BEGINS */
-/* @changelog-record:#change[6.0]-"replaced float with flexbox" // BEGIN // */
-header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--theme-yellow);
-    margin: 0;
-}
 
-header a {
-    color: var(--theme-yellow);
-    text-decoration: none;
-}
 
-header nav {
-    margin: 7px 0;
-}
-/* @changelog-record:#change[6.0]-"replaced float with flexbox" \\ END \\ */
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-}
-/* HEADER STYLE ENDS */
-
-/* SECTION STYLE BEGINS */
+/* 
+    MAIN PAGE CONTENT // BEGINS // 
+*/
 .intro {
     text-align: center;
 }
@@ -229,7 +275,6 @@ header nav ul li a {
 .secondary-border {
     border-color: #39a6b2;
 }
-
 
 .intro p {
     line-height: 1.7;
@@ -269,7 +314,7 @@ header nav ul li a {
 }
 
 .trainers {
-    text-align:  center;
+    text-align: center;
 }
 
 .trainer {
@@ -394,10 +439,13 @@ header nav ul li a {
 .contact-info a {
     color: var(--theme-yellow);
 }
+/* 
+    MAIN PAGE CONTENT \\ ENDS \\
+*/
 
-/* SECTION STYLE ENDS */
-
-/* FOOTER STYLES BEGIN */
+/* 
+    FOOTER STYLEs // BEGIN //
+*/
 /* @changelog-record:#change[4.0]-"footer background change" // BEGIN // */
 footer {
     background-color: var(--theme-blue);
@@ -421,5 +469,7 @@ footer a {
     color: var(--theme-yellow);
 }
 /* @changelog-record:#change[4.0]-"footer background change" \\ END \\ */
-/* FOOTER STYLES END */
+/* 
+    FOOTER STYLEs \\ END \\
+*/
 
