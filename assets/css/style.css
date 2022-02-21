@@ -55,6 +55,14 @@
 */
 
 
+/* @changelog-record:#change[5.0]-"added global variables // BEGIN // */
+/* GLOBAL VARIABLES // BEGIN // */
+:root {
+    --theme-yellow: #fce138;
+    --theme-blue: #024e76;
+}
+/* GLOBAL VARIABLES \\ END \\ */
+/* @changelog-record:#change[5.0]-"added global variables \\ END \\ */
 
 
 /* 
@@ -101,19 +109,19 @@ section {
 }
 
 .hero-form {
-    color: #024e76;
-    background-color: #fce138;
+    color: var(--theme-blue);;
+    background-color: var(--theme-yellow);
     padding: 20px;
     width: 500px;
-    border: solid 3px #024e76;
+    border: solid 3px var(--theme-blue);
     position: absolute;
     right: 140px;
     bottom: 120px;
 }
 
 .hero-form button {
-    background-color: #024e76;
-    color: #fce138;
+    background-color: var(--theme-blue);
+    color: var(--theme-yellow);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -140,7 +148,7 @@ section {
 
 .hero-motive h2 {
     font-style: italic;
-    color: #fce138;
+    color: var(--theme-yellow);
     font-size: 50px;
     text-align: end;
 }
@@ -152,11 +160,11 @@ section {
 /* @changelog-record:#change[1.0]-"added hero text styles" \\ END \\ */
 
 .form-input-field {
-    border: 1px solid #024e76;
+    border: 1px solid var(--theme-blue);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--theme-blue);
     width: 100%;
     margin-bottom: 15px;
 }
@@ -171,13 +179,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--theme-yellow);
     margin: 0;
     display: inline;
 }
 
 header a {
-    color: #fce138;
+    color: var(--theme-yellow);
     text-decoration: none;
 }
 
@@ -204,7 +212,7 @@ header nav ul li a {
 
 .section-title {
     font-size: 55px;
-    color: #024e76;
+    color: var(--theme-blue);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     display: inline-block;
@@ -212,7 +220,7 @@ header nav ul li a {
 }
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--theme-yellow);
 }
 
 .secondary-border {
@@ -230,7 +238,7 @@ header nav ul li a {
 
 .steps {
     text-align: center;
-    background: #fce138;
+    background: var(--theme-yellow);
 }
 
 .steps div {
@@ -243,7 +251,7 @@ header nav ul li a {
 }
 
 .steps h3 {
-    color: #024e76;
+    color: var(--theme-blue);
     font-size: 46px;
     margin-top: 10px;
 }
@@ -264,8 +272,8 @@ header nav ul li a {
 .trainer {
     width:  900px;
     margin:  0 auto 30px auto;
-    background:  #024e76;
-    color: #fce138;
+    background:  var(--theme-blue);
+    color: var(--theme-yellow);
     overflow: auto;
 }
 
@@ -305,16 +313,24 @@ header nav ul li a {
 }
 
 .contact {
-    background: #024e76;
+    background: var(--theme-blue);
     text-align: center;
 }
 
 .contact h3 {
-    color: #024e76;
+    color: var(--theme-blue);
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--theme-yellow);
+}
+
+/* @changelog-record:#change[3.0]-"changed reach out section layout" // BEGIN // */
+.contact-info {
+    height: 404px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: black; */
 }
 
 .contact-info iframe {
@@ -323,17 +339,45 @@ header nav ul li a {
     border: 0;
 }
 
-.contact-info div {
+.contact-info form {
     width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
-    color: white;
 }
 
+.contact-info button {
+    width: 100%;
+    height: 25px;
+    background-color: var(--theme-yellow);
+    border-radius: 10px;
+}
+
+.contact-info form h3 {
+    text-align: start;
+}
+
+.contact-info form input {
+    background-color: #c5d3de;
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#user-message {
+    height: 50px;
+}
+
+.contact-info div {
+    width: 410px;
+    vertical-align: top;
+    text-align: left;
+    color: white;
+}
+/* @changelog-record:#change[3.0]-"changed reach out section layout" \\ END \\ */
+
 .contact-info h3 {
-    color: #fce138;
+    color: var(--theme-yellow);
     font-size: 32px;
 }
 
@@ -345,20 +389,21 @@ header nav ul li a {
 }
 
 .contact-info a {
-    color: #fce138;
+    color: var(--theme-yellow);
 }
 
 /* SECTION STYLE ENDS */
 
 /* FOOTER STYLES BEGIN */
+/* @changelog-record:#change[4.0]-"footer background change" // BEGIN // */
 footer {
-    background-color: #fce138;
+    background-color: var(--theme-blue);
     padding: 40px 35px;
 }
 
 footer h2 {
     display: inline;
-    color: #024e76;
+    color: var(--theme-yellow);
     font-size: 30px;
     margin: 0;
 }
@@ -370,7 +415,8 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--theme-yellow);
 }
+/* @changelog-record:#change[4.0]-"footer background change" \\ END \\ */
 /* FOOTER STYLES END */
 

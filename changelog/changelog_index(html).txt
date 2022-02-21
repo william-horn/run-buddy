@@ -8,4 +8,9 @@
                                                                                                     ------------------------------
 @changelog-record:#change[1.0]
     [1.0]-"added hero text"
-        -   added new h2 with additional information about the sign-up process next to the initial user information form.
+        *   added new h2 with additional information about the sign-up process next to the initial user information form.
+
+@changelog-record:#change[2.0]
+    [2.0]-"added contact user form"
+
+----------------------------------------------------------------------------------------------------------------------------------
