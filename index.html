@@ -1,56 +1,45 @@
 <!--
+    ? @document-start
     ==========================
     | RUN BUDDY LANDING PAGE |
     ==================================================================================================================================
 
-    ? @author:                 Run Buddy Dev Team | William J. Horn
-    ? @document:               index.html
-    ? @document-created:       02/12/2022
-    ? @document-modified:      02/21/2022
-    ? @document-version:       2.0
+    ? @author:                 Run Buddy Team, William J. Horn
+    ? @document-name:          index.html
+    ? @document-created:       02/13/2022
+    ? @document-modified:      02/23/2022
+    ? @document-version:       v2.0.0.0
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-about
     ==================
     | ABOUT DOCUMENT |
     ==================================================================================================================================
 
-    This is a landing webpage for the Run Buddy website.
+    Information about document here
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-changelog
     ======================
     | DOCUMENT CHANGELOG |
     ==================================================================================================================================
 
-    [Version 1.0] - "initial construction"
+    * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
+    file. Learn more about the changelog system here: 
+    https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
-        -   No records
-
-    [Version 2.0] - "Mobile Support Update"
-
-        -
-
-    ? @document-changelog-detailed
-    For all changelog history, navigate to the changelog folder within this file's directory and open the file named:
-
-    changelog_<this file's name>(<this file type>)
-
-    Where <this file's name> is the name of this file and <this file type> is this file type's extension. For example, if this
-    file was named "index.html", the changelog file would be named "changelog_index(html)".
-
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-todo
     =================
     | DOCUMENT TODO |
     ==================================================================================================================================
 
-    -   
+    -
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 -->
 
 <!DOCTYPE html>
@@ -58,7 +47,7 @@
 <html lang="en">
 
     <!--
-        ? @metadata
+        ? @program-init
         ==========================
         ==== WEBPAGE METADATA ====
         ==========================
@@ -67,11 +56,11 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Run Buddy</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/primary-style.css">
     </head>
 
     <!--
-        ? @main
+        ? @program-main
         ==========================
         ===== WEBPAGE RENDER =====
         ==========================
@@ -79,6 +68,7 @@
 
     <body>
 
+        <!-- @html:"header" -->
         <!-- HEADER // BEGIN // -->
         <header>
             <h1><a href="./index.html">RUN BUDDY</a></h1>
@@ -97,19 +87,20 @@
 
 
 
-
+        <!-- @html:"hero section" -->
         <!-- HERO SECTION // BEGIN // -->
         <section class="hero">
 
-            <!-- @changelog-record:#change[1.0]-"added hero text" // BEGIN // -->
+            <!-- @changelog-record:start[1.0] -->
             <div class="hero-motive">
                 <h2>Start Building Habits.</h2>
                 <p>
                     seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
                 </p>
             </div>
-            <!-- @changelog-record:#change[1.0]-"added hero text" \\ END \\ -->
+            <!-- @changelog-record:end[1.0] -->
 
+            <!-- @html:"hero form" -->
             <!-- user information form container -->
             <div class="hero-form">
                 <h3>Get Started Today</h3>
@@ -148,22 +139,29 @@
 
 
 
+        <!-- @html:"main page content" -->
         <!-- MAIN PAGE CONTENT // BEGIN // -->
         <main>
 
+            <!-- @html:"what we do section" -->
             <!-- "What We Do" section -->
             <section id="what-we-do" class="intro">
-                <h2 class="section-title primary-border">What We Do</h2>
-                <p>
-                    butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle 
-                    chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled 
-                    twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-                </p>
+                <div class="flex-row"></div>>
+                    <h2 class="section-title primary-border">What We Do</h2>
+                </div>
+                <div class="flex-row">
+                    <p>
+                        butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle 
+                        chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled 
+                        twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+                    </p>
+                </div>
             </section>
 
+            <!-- @html:"what you do section" -->
             <!-- "What You Do" section -->
             <section id="what-you-do" class="steps">
-                <h2 class="section-title secondary-border">What You Do</h2>
+                <div class="flex-row"></div>><h2 class="section-title secondary-border">What You Do</h2></div>
                 <div>
                     <img src="./assets/images/step-1.svg" alt="">
                     <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
@@ -189,9 +187,10 @@
                 </div>
             </section>
 
+            <!-- @html:"trainers" -->
             <!-- "Meet The Trainers" section -->
             <section class="trainers" id="your-trainers">
-                <h2 class="section-title primary-border">Meet the Trainers</h2>
+                <div class="flex-row"></div>><h2 class="section-title primary-border">Meet the Trainers</h2></div>
                 <article class="trainer">
                     <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
                     <div class="trainer-bio text-left">
@@ -241,9 +240,10 @@
                 </article>
             </section>
 
+            <!-- @html:"reach out section" -->
             <!-- "Reach Out" section -->
             <section class="contact" id="reach-out">
-                <h2 class="section-title secondary-border">Reach Out</h2>
+                <div class="flex-row"></div>><h2 class="section-title secondary-border">Reach Out</h2></div>
                 <div class="contact-info">
                     <div>
                         <h3>Run Buddy</h3>
@@ -261,7 +261,7 @@
                         </address>
                     </div>
 
-                    <!-- @changelog-record:#change[2.0]-"added contact user form" // BEGIN //  -->
+                    <!-- @changelog-record:start[2.0]-->
                     <form action="">
                         <h3>Contact Us</h3>
 
@@ -273,7 +273,7 @@
                         
                         <button type="submit">Submit</button>
                     </form>
-                    <!-- @changelog-record:#change[2.0]-"added contact user form" \\ END \\  -->
+                    <!-- @changelog-record:end[2.0] -->
 
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.8415514040316!2d-78.89054108444171!3d36.02416248011576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace39edaf7bac1%3A0x3008fff8e7a3fc7c!2s2608%20Banner%20St%2C%20Durham%2C%20NC%2027704!5e0!3m2!1sen!2sus!4v1644911810752!5m2!1sen!2sus" 
@@ -286,6 +286,7 @@
         <!-- MAIN PAGE CONTENT \\ END \\ -->
 
 
+        <!-- @html:"footer" -->
         <!-- FOOTER // BEGIN // -->
         <footer>
             <h2>❤️ Made with love by Run Buddy.</h2>
@@ -300,3 +301,4 @@
 </html>
 
 
+<!-- ? @document-end -->

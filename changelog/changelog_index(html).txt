@@ -1,4 +1,5 @@
-@changelog-records
+? @document-start
+? @changelog-records
 ======================
 | CHANGE LOG RECORDS |
 ==================================================================================================================================
@@ -6,11 +7,13 @@
 ----------------------------------------------------------------------------------------------------------------------------------
                                                                                                     | @changelog-date:02/20/2022 |
                                                                                                     ------------------------------
-@changelog-record:#change[1.0]
-    [1.0]-"added hero text"
-        *   added new h2 with additional information about the sign-up process next to the initial user information form.
+@changelog-record:log[1.0]
+        -   added hero text 
+        -   added new h2 with additional information about the sign-up process next to the initial user information form.
 
-@changelog-record:#change[2.0]
-    [2.0]-"added contact user form"
+@changelog-record:log[2.0]
+        -   added contact user form
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+? @document-end

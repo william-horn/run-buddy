@@ -1,4 +1,5 @@
-@changelog-records
+? @document-start
+? @changelog-records
 ======================
 | CHANGE LOG RECORDS |
 ==================================================================================================================================
@@ -6,37 +7,65 @@
 ----------------------------------------------------------------------------------------------------------------------------------
                                                                                                     | @changelog-date:02/20/2022 |
                                                                                                     ------------------------------
-@changelog-record:#change[1.0]
-    [1.0]-"added hero text styles"
+@changelog-record:log[1.0]
+        -   added hero text styles
 
-@changelog-record:#change[2.0]
-    [2.0]-"flipped hero image left"
+@changelog-record:log[2.0]
+        -   flipped hero image left
 
-@changelog-record:#change[3.0]
-    [3.0]-"changed reach out section layout"
-        *   turned reach out container into flexbox
-        *   swapped horizontal position of google maps iframe and Run Buddy contact information div
-        *   inserted new user form for submitting a user inquiry between map and run buddy info
+@changelog-record:log[3.0]
+        -   turned reach out container into flexbox
+        -   swapped horizontal position of google maps iframe and Run Buddy contact information div
+        -   inserted new user form for submitting a user inquiry between map and run buddy info
 
-@changelog-record:#change[4.0]
-    [4.0]-"footer background change"
-        *   changed footer background from var(--theme-yellow) [#fce138] to var(--theme-blue) [#024e76]
-        *   inverted other content colors inside of footer from var(--theme-blue) to var(--theme-yellow)
+@changelog-record:log[4.0]
+        -   footer background change
+        -   changed footer background from var(--theme-yellow) [#fce138] to var(--theme-blue) [#024e76]
+        -   inverted other content colors inside of footer from var(--theme-blue) to var(--theme-yellow)
 
-@changelog-record:#change[5.0]
-    [5.0]-"added global variables"
-        *   added main theme color variables
+@changelog-record:log[5.0]
+        -   added global variables & added main theme color variables
 
 TODO: 
-    - revisit #change[3.0] and fix contact-user form positioning and styling
+    - revisit changelog-record:start[3.0] and fix contact-user form positioning and styling
 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                                                                     | @changelog-date:02/21/2022 |
                                                                                                     ------------------------------
-@changelog-record:#change[6.0]
-    [6.0]-"replaced float with flexbox"
-        *   added header {display: flex}
-        *   removed header h1 {display: inline}
-        *   removed header nav {float: right}                                                                         
+@changelog-record:log[6.0]
+        -   replaced header {float: right} with header {display: flex}
+        -   removed header h1 {display: inline}
+        -   removed header nav {float: right}                                                                         
 
 ----------------------------------------------------------------------------------------------------------------------------------
+                                                                                                    | @changelog-date:02/23/2022 |
+                                                                                                    ------------------------------
+@changelog-record:log[7.0]
+        -   disabled old display and padding/margins in place of flexbox
+
+        @changelog-record:log[7.1]
+            -   disabled entire .intro class
+
+
+        @changelog-record:log[7.2]
+            -   disabled .steps{text-align: center}
+
+        @changelog-record:log[7.3]
+            -   disabled .trainers{text-align: center}
+
+        @changelog-record:log[7.4]
+            -   disabled .contact{text-align: center}
+
+        @changelog-record:log[7.5]
+            -   implemented 
+            
+                .flex-row {
+                    display: flex
+                }
+
+
+                                                                                                
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+? @document-end

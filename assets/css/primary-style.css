@@ -1,69 +1,57 @@
 /*
+    ? @document-start
     ====================================
     | PRIMARY STYLESHEET FOR RUN BUDDY |
     ==================================================================================================================================
 
-    ? @author:                 Run Buddy Dev Team | William J. Horn
-    ? @document:               style.css
-    ? @document-created:       02/12/2022
-    ? @document-modified:      02/21/2022
-    ? @document-version:       2.0
+    ? @author:                 Run Buddy Team, William J. Horn
+    ? @document-name:          primary-style.css
+    ? @document-created:       02/14/2022
+    ? @document-modified:      02/23/2022
+    ? @document-version:       v1.0.0.0
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-about
     ==================
     | ABOUT DOCUMENT |
     ==================================================================================================================================
 
-    Primary CSS styles for the Run Buddy website.
+    Primary styles for run buddy landing page
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-changelog
     ======================
     | DOCUMENT CHANGELOG |
     ==================================================================================================================================
 
-    [Version 1.0] - "initial construction"
+    * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
+    file. Learn more about the changelog system here: 
+    https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
-        -   No records
-
-    [Version 2.0] - "Mobile Support Update"
-
-        -   
-
-
-    ? @document-changelog-detailed
-    For all changelog history, navigate to the changelog folder within this file's directory and open the file named:
-
-    changelog_<this file's name>(<this file type>)
-
-    Where <this file's name> is the name of this file and <this file type> is this file type's extension. For example, if this
-    file was named "index.html", the changelog file would be named "changelog_index(html)".
-
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-todo
     =================
     | DOCUMENT TODO |
     ==================================================================================================================================
 
-    -   
+    - 
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 */
 
 
 /*
-    ? @metadata
+    ? @program-init
     ==================================================
     ================== CSS METADATA ==================
     ==================================================
 */
 
 
-/* @changelog-record:#change[5.0]-"added global variables // BEGIN // */
+/* @changelog-record:start[5] */
 /* 
     GLOBAL VARIABLES // BEGIN // 
 */
@@ -74,7 +62,7 @@
 /* 
     GLOBAL VARIABLES \\ END \\ 
 */
-/* @changelog-record:#change[5.0]-"added global variables \\ END \\ */
+/* @changelog-record:end[5] */
 
 
 
@@ -113,19 +101,18 @@ section {
 
 
 /*
-    ? @main
+    ? @program-main
     ==================================================
     ================== CSS STYLING ===================
     ==================================================
 */
 
 
-
-
+/* @css:"header"" */
 /* 
     HEADER STYLE BEGINS 
 */
-/* @changelog-record:#change[6.0]-"replaced float with flexbox" // BEGIN // */
+/* @changelog-record:start[6.0] */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -158,13 +145,13 @@ header nav ul {
     align-items: center;
     flex-wrap: wrap;
 }
-/* @changelog-record:#change[6.0]-"replaced float with flexbox" \\ END \\ */
+/* @changelog-record:end[6.0] */
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
-    background-color: black; /* @debug */
+    background-color: black; /* @debug-on:start:"background on just for viewing flexbox effects" */
 }
 /*
     HEADER STYLE \\ END \\
@@ -172,13 +159,15 @@ header nav ul li a {
 
 
 
-
+/* @css:"hero" */
 /*
     HERO STYLES // BEGIN //
 */
 .hero {
-    /* @changelog-record:#change[2.0]-"flipped hero image left" // BEGIN-END \\ */
+    /* @changelog-record:start[2.0] */
     background-image: url("../images/flipped-hero-image.jpg");
+    /* @changelog-record:end[2.0] */
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -214,7 +203,7 @@ header nav ul li a {
     margin: 5px 0 15px 0;
 }
 
-/* @changelog-record:#change[1.0]-"added hero text styles" // BEGIN // */
+/* @changelog-record:start[1.0] */
 .hero-motive {
     width: 35%;
     text-align: right;
@@ -234,7 +223,7 @@ header nav ul li a {
     color: white;
     text-align: end;
 }
-/* @changelog-record:#change[1.0]-"added hero text styles" \\ END \\ */
+/* @changelog-record:end[1.0] */
 
 .form-input-field {
     border: 1px solid var(--theme-blue);
@@ -251,20 +240,26 @@ header nav ul li a {
 
 
 
-
+/* @css:"main content" */
 /* 
     MAIN PAGE CONTENT // BEGINS // 
 */
-.intro {
+/* @changelog-record:start[7.1] */
+/* .intro {
     text-align: center;
-}
+} */
+/* @changelog-record:end[7.1] */
 
 .section-title {
     font-size: 55px;
     color: var(--theme-blue);
-    margin-bottom: 35px;
+
+    /* @changelog-record:start[7.0] */
+    /* margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    display: inline-block;
+    display: inline-block; */
+    /* @changelog-record:end[7.0] */
+
     border-bottom: 3px solid;
 }
 
@@ -285,7 +280,9 @@ header nav ul li a {
 }
 
 .steps {
-    text-align: center;
+    /* @changelog-record:start[7.2] */
+    /* text-align: center; */
+    /* @changelog-record:end[7.2] */
     background: var(--theme-yellow);
 }
 
@@ -313,9 +310,11 @@ header nav ul li a {
     font-size: 38px;
 }
 
+/* @changelog-record:start[7.3] */
 .trainers {
-    text-align: center;
+    /* text-align: center; */
 }
+/* @changelog-record:end[7.3] */
 
 .trainer {
     width:  900px;
@@ -362,7 +361,9 @@ header nav ul li a {
 
 .contact {
     background: var(--theme-blue);
-    text-align: center;
+    /* @changelog-record:start[7.4] */
+    /* text-align: center; */
+    /* @changelog-record:start[7.4] */
 }
 
 .contact h3 {
@@ -373,11 +374,13 @@ header nav ul li a {
     color: var(--theme-yellow);
 }
 
-/* @changelog-record:#change[3.0]-"changed reach out section layout" // BEGIN // */
+/* @changelog-record:start[3.0] */
 .contact-info {
     height: 404px;
     display: flex;
     justify-content: space-evenly;
+
+    /* @debug-off:start:"background on for viewing changes" */
     /* background-color: black; */
 }
 
@@ -422,7 +425,7 @@ header nav ul li a {
     text-align: left;
     color: white;
 }
-/* @changelog-record:#change[3.0]-"changed reach out section layout" \\ END \\ */
+/* @changelog-record:end[3.0] */
 
 .contact-info h3 {
     color: var(--theme-yellow);
@@ -439,14 +442,21 @@ header nav ul li a {
 .contact-info a {
     color: var(--theme-yellow);
 }
+
+/* @changelog-record:start[7.5] */
+.flex-row {
+    display: flex;
+}
+/* @changelog-record:start[7.5] */
 /* 
     MAIN PAGE CONTENT \\ ENDS \\
 */
 
+/* @css:"footer" */
 /* 
-    FOOTER STYLEs // BEGIN //
+   FOOTER STYLEs // BEGIN //
 */
-/* @changelog-record:#change[4.0]-"footer background change" // BEGIN // */
+/* @changelog-record:start[4.0] */
 footer {
     background-color: var(--theme-blue);
     padding: 40px 35px;
@@ -469,8 +479,9 @@ footer div {
 footer a {
     color: var(--theme-yellow);
 }
-/* @changelog-record:#change[4.0]-"footer background change" \\ END \\ */
+/* @changelog-record:end[4.0] */
 /* 
     FOOTER STYLEs \\ END \\
 */
 
+/* ? @document-end */

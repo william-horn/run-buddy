@@ -1,15 +1,16 @@
 /*
+    ? @document-start
     ======================================
     | SECONDARY STYLESHEET FOR RUN BUDDY |
     ==================================================================================================================================
 
-    ? @author:                 Run Buddy Dev Team | William J. Horn
-    ? @document:               style.css
+    ? @author:                 Run Buddy Team, William J. Horn
+    ? @document-name:          secondary-styles.css
     ? @document-created:       02/12/2022
     ? @document-modified:      02/21/2022
     ? @document-version:       2.0
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-about
     ==================
@@ -19,36 +20,27 @@
     Secondary CSS styles for the Run Buddy website. This document also acts as a selector overload for the primary "style.css"
 	file.
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-changelog
     ======================
     | DOCUMENT CHANGELOG |
     ==================================================================================================================================
 
-    [Version 1.0] - "initial construction"
+    * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
+    file. Learn more about the changelog system here: 
+    https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
-        -   No records 
-
-
-    ? @document-changelog-detailed
-    For all changelog history, navigate to the changelog folder within this file's directory and open the file named:
-
-    changelog_<this file's name>(<this file type>)
-
-    Where <this file's name> is the name of this file and <this file type> is this file type's extension. For example, if this
-    file was named "index.html", the changelog file would be named "changelog_index(html)".
-
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @document-todo
     =================
     | DOCUMENT TODO |
     ==================================================================================================================================
 
-    -   
+    -  
 
-    ==================================================================================================================================
+    ----------------------------------------------------------------------------------------------------------------------------------
 */
 
 .hero {
@@ -92,3 +84,5 @@
 	color: #39a6b2;
 	margin: 10px 0 10px 0;
 }
+
+/* @document-end */
