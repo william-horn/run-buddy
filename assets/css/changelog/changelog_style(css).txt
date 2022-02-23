@@ -10,18 +10,22 @@
 @changelog-record:log[1.0]
         -   added hero text styles
 
+
 @changelog-record:log[2.0]
         -   flipped hero image left
+
 
 @changelog-record:log[3.0]
         -   turned reach out container into flexbox
         -   swapped horizontal position of google maps iframe and Run Buddy contact information div
         -   inserted new user form for submitting a user inquiry between map and run buddy info
 
+
 @changelog-record:log[4.0]
         -   footer background change
         -   changed footer background from var(--theme-yellow) [#fce138] to var(--theme-blue) [#024e76]
         -   inverted other content colors inside of footer from var(--theme-blue) to var(--theme-yellow)
+
 
 @changelog-record:log[5.0]
         -   added global variables & added main theme color variables
@@ -44,26 +48,55 @@ TODO:
         -   disabled old display and padding/margins in place of flexbox
 
         @changelog-record:log[7.1]
-            -   disabled entire .intro class
-
+                -   disabled entire .intro class
 
         @changelog-record:log[7.2]
-            -   disabled .steps{text-align: center}
+                -   disabled .steps{text-align: center}
 
         @changelog-record:log[7.3]
-            -   disabled .trainers{text-align: center}
+                -   disabled .trainers{text-align: center}
 
         @changelog-record:log[7.4]
-            -   disabled .contact{text-align: center}
+                -   disabled .contact{text-align: center}
 
         @changelog-record:log[7.5]
-            -   implemented 
+                -   implemented 
             
-                .flex-row {
-                    display: flex
-                }
+                    .flex-row {
+                       display: flex
+                   }
 
 
+@changelog-record:log[8.0]
+        -   added .flex-row{display: row} utility class
+
+        @changelog-record:log[8.1]
+                -   adjusted .section-title properties for flexbox
+
+
+@changelog-record:log[9.0]
+        -   updated all step divs by creating a new container for them with a class of 'step'
+
+
+@changelog-record:log[10.0]
+        -   disabled classes:
+                ! .steps div{...}
+                ! .steps img{...}
+                ! .steps span{...}
+
+        @changelog-record:log[10.1]
+                -   changed .steps h3{...} to .step h3{...} 
+                -   disabled margin-top in .step h3{...}
+
+        @changelog-record:log[10.2]
+                -   changed .steps p{...} to .step-text p{...}
+                -   changed .step-text{font-size: 23px} to .step-text{font-size: 18px}
+
+        @changelog-record:log[10.3]
+                -   added .step-text h4{...}
+
+@changelog-record:log[11.0]
+        -   added .step{...}
                                                                                                 
 ----------------------------------------------------------------------------------------------------------------------------------
 

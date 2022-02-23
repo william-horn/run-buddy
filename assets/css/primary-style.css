@@ -51,7 +51,7 @@
 */
 
 
-/* @changelog-record:start[5] */
+/* @changelog-record:start[5.0] */
 /* 
     GLOBAL VARIABLES // BEGIN // 
 */
@@ -62,7 +62,7 @@
 /* 
     GLOBAL VARIABLES \\ END \\ 
 */
-/* @changelog-record:end[5] */
+/* @changelog-record:end[5.0] */
 
 
 
@@ -254,6 +254,13 @@ header nav ul li a {
     font-size: 55px;
     color: var(--theme-blue);
 
+    /* @changelog-record:start[8.1] */
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35 auto;
+    width: 50%;
+    /* @changelog-record:end[8.1] */
+
     /* @changelog-record:start[7.0] */
     /* margin-bottom: 35px;
     padding: 0 100px 20px 100px;
@@ -262,6 +269,12 @@ header nav ul li a {
 
     border-bottom: 3px solid;
 }
+
+/* @changelog-record:start[8.0] */
+.flex-row {
+    display: flex;
+}
+/* @changelog-record:end[8.0] */
 
 .primary-border {
     border-color: var(--theme-yellow);
@@ -277,7 +290,21 @@ header nav ul li a {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
+
+/* @changelog-record:start[11.0] */
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* @changelog-record:end[11.0] */
 
 .steps {
     /* @changelog-record:start[7.2] */
@@ -286,7 +313,12 @@ header nav ul li a {
     background: var(--theme-yellow);
 }
 
-.steps div {
+.step-info {
+    flex: 2 70%;
+}
+
+/* @changelog-record:start[10.0] */
+/* .steps div {
     margin-bottom: 80px;
 }
 
@@ -295,20 +327,34 @@ header nav ul li a {
     margin: 10px 0;
 }
 
-.steps h3 {
-    color: var(--theme-blue);
-    font-size: 46px;
-    margin-top: 10px;
-}
-
-.steps p {
-    color: #39a6b2;
-    font-size: 23px;
-}
-
 .steps span {
     font-size: 38px;
+} */
+/* @changelog-record:end[10.0] */
+
+/* @changelog-record:start[10.1] */
+.step h3 {
+    color: var(--theme-blue);
+    font-size: 46px;
+    flex: 1 30%;
+    /* margin-top: 10px; */
 }
+/* @changelog-record:end[10.1] */
+
+/* @changelog-record:start[10.3] */
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+/* @changelog-record:end[10.3] */
+
+/* @changelog-record:start[10.2] */
+.step-text p {
+    color: #39a6b2;
+    font-size: 18px;
+}
+/* @changelog-record:end[10.2] */
 
 /* @changelog-record:start[7.3] */
 .trainers {
@@ -363,7 +409,7 @@ header nav ul li a {
     background: var(--theme-blue);
     /* @changelog-record:start[7.4] */
     /* text-align: center; */
-    /* @changelog-record:start[7.4] */
+    /* @changelog-record:end[7.4] */
 }
 
 .contact h3 {
@@ -447,7 +493,7 @@ header nav ul li a {
 .flex-row {
     display: flex;
 }
-/* @changelog-record:start[7.5] */
+/* @changelog-record:end[7.5] */
 /* 
     MAIN PAGE CONTENT \\ ENDS \\
 */
