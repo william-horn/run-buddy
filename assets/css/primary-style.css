@@ -447,15 +447,21 @@ header nav ul li a {
 .contact-info {
     height: 404px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     /* @debug-off:start:"background on for viewing changes" */
     /* background-color: black; */
 }
 
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
 .contact-info iframe {
     height:  400px;
-    width: 400px;
+    /* width: 400px; */
     border: 0;
 }
 
@@ -489,9 +495,9 @@ header nav ul li a {
 }
 
 .contact-info div {
-    width: 410px;
+    /* width: 410px;
     vertical-align: top;
-    text-align: left;
+    text-align: left; */
     color: white;
 }
 /* @changelog-record:end[3.0] */
@@ -504,8 +510,29 @@ header nav ul li a {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
 }
 
 .contact-info a {
