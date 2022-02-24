@@ -148,7 +148,8 @@ header nav ul {
 /* @changelog-record:end[6.0] */
 
 header nav ul li a {
-    margin: 0 30px;
+    /* margin: 0 30px; */
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     background-color: black; /* @debug-on:start:"background on just for viewing flexbox effects" */
@@ -172,6 +173,7 @@ header nav ul li a {
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -204,13 +206,14 @@ header nav ul li a {
 }
 
 /* @changelog-record:start[1.0] */
+/* called .hero-cta in the module */
 .hero-motive {
     width: 35%;
     text-align: right;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-motive h2 {
@@ -251,7 +254,7 @@ header nav ul li a {
 /* @changelog-record:end[7.1] */
 
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: var(--theme-blue);
 
     /* @changelog-record:start[8.1] */
@@ -581,3 +584,9 @@ footer a {
 */
 
 /* ? @document-end */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
