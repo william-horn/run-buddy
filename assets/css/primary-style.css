@@ -65,8 +65,6 @@
 /* @changelog-record:end[5.0] */
 
 
-
-
 /* 
     GLOBAL PROPERTY DEFAULTS // BEGIN // 
 */
@@ -76,10 +74,8 @@
     box-sizing: border-box;
 }
 /* 
-    GLOBAL PROPERTY DEFAULTS // END // 
+    GLOBAL PROPERTY DEFAULTS \\ END \\
 */
-
-
 
 
 /* 
@@ -94,10 +90,8 @@ section {
     padding: 60px;
 }
 /* 
-    GLOBAL ELEMENT STYLES // BEGIN //
+    GLOBAL ELEMENT STYLES \\ END \\
 */
-
-
 
 
 /*
@@ -119,6 +113,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/flipped-hero-image.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -152,7 +154,9 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    background-color: black; /* @debug-on:start:"background on just for viewing flexbox effects" */
+
+    /* @debug-off:start:"background on just for viewing flexbox effects" */
+    /* background-color: black; */
 }
 /*
     HEADER STYLE \\ END \\
@@ -170,11 +174,14 @@ header nav ul li a {
     /* @changelog-record:end[2.0] */
 
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-form {
@@ -183,6 +190,8 @@ header nav ul li a {
     padding: 20px;
     margin: 3.5%;
     border: solid 3px var(--theme-blue);
+    box-shadow: 0 0 10px rgba(252, 225, 56, 0.8);
+    border-radius: 15px;
 }
 
 .hero-form button {
@@ -191,6 +200,7 @@ header nav ul li a {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .hero-form label {
@@ -236,6 +246,12 @@ header nav ul li a {
     color: var(--theme-blue);
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input-field:focus {
+    background-color: rgba(255,255,255, 1);
 }
 /*
     HERO STYLES \\ END \\
@@ -260,7 +276,7 @@ header nav ul li a {
     /* @changelog-record:start[8.1] */
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35 auto;
+    margin: 0 auto 35px auto;
     width: 50%;
     /* @changelog-record:end[8.1] */
 
@@ -301,7 +317,7 @@ header nav ul li a {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    /* border-bottom: 1px solid #39a6b2; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -317,10 +333,14 @@ header nav ul li a {
 }
 
 .step-info {
-    flex: 2 70%;
+    flex: 2 20%; 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 /* @changelog-record:start[10.0] */
@@ -526,7 +546,9 @@ header nav ul li a {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
+
 
 .contact-form button {
     width: 100%;
@@ -534,8 +556,9 @@ header nav ul li a {
     background: #fce138;
     color: #024e76;
     text-align: center;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .contact-info a {
@@ -550,6 +573,34 @@ header nav ul li a {
 /* 
     MAIN PAGE CONTENT \\ ENDS \\
 */
+
+
+
+/* @css:"pseudo classes" */
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+  
+.hero-form button:hover {
+    background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+.form-input-field:focus {
+    background-color: rgba(255,255,255, 1);
+}
+
+.step:last-child {
+    border-bottom: 1px solid #39a6b2;
+}
+
 
 /* @css:"footer" */
 /* 
@@ -591,6 +642,7 @@ footer a {
     header {
       padding-bottom: 0;
       justify-content: center;
+      position: relative;
     }
   
     header h1 {
